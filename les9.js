@@ -1,8 +1,9 @@
-const fn1 = (str, y) => {
-    if (y < str.length) {
-        return str.slice(0, y) + "...";
-    } else {
-        return str;
-    }
+const stringCutter = (string, symbolsQuantity) => {
+    if (typeof string !== "string" || typeof symbolsQuantity !== "number") return;
+
+    if (symbolsQuantity < string.length) {
+        return string.slice(0, symbolsQuantity) + "...";
+    } 
+        return string;
 }
-console.log(fn1("Privetiki", 6));
+console.log(stringCutter("Privetiki", 6));
