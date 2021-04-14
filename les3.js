@@ -1,8 +1,6 @@
-const min = (a, b) => {
-    if (a < b) {
-        return a;
-    } else {
-        return b;
-    }
+const findMin = (firstNumber, secondNumber) => {
+    if (typeof firstNumber !== "number" || typeof secondNumber !== "number") return;
+        
+    return Math.min(firstNumber, secondNumber);
 }
-console.log(min(8,5));
+console.log(findMin(8,5));
