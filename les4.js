@@ -1,4 +1,6 @@
-const isEven = (x) => {
-    return !(x % 2);
+const isEven = (number) => {
+    if (typeof number !== "number") return;
+    
+    return !(number % 2);
 }
 console.log(isEven(5));
