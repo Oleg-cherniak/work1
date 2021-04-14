@@ -1,7 +1,9 @@
-const fn1 = (string) => {
-    const str = string[0].toUpperCase();
-    const qwe = string.slice(1).toLowerCase();
-    const qqq = str + qwe;
-    return qqq;
+const capitalize = (string) => {
+    if (typeof string !== "string") return;
+    
+    const firstChar = string[0].toUpperCase();
+    const restString = string.slice(1).toLowerCase();
+    return firstChar + restString;
 }
-console.log(fn1("qweWEE"));
+
+console.log(capitalize("qweWEE"));
