@@ -1,9 +1,9 @@
-const a = [1, 2, 3, "1", "2"];
-const newArray = a.map( x => {
+const arr = [1, 2, "3", "4"];
+const newArray = arr.map( x => {
+    if (!Array.isArray(arr)) return;
     if (typeof x === "number") {
         return String(x);
-    } else if (typeof x === "string") {
+    } 
         return Number(x);
-    }
 })
 console.log(newArray);
