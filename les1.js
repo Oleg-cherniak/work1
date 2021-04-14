@@ -1,8 +1,11 @@
-const fn1 = (sayHello) => {
-    if (sayHello === "Mark") {
-        return `Hi, mark!`
+const sayHello = (name) => {
+    if (typeof name !== "string") return;
+    
+    if (name.toLowerCase() === "mark") {
+        return `Hi, ${name}!`
     } else {
-        return `Hello, ${sayHello} !`
+        return `Hello, ${name} !`
     }
 }
-console.log(fn1("Dima"));
+console.log(sayHello("Dima"));
+console.log(sayHello("mark"));
